@@ -1,0 +1,54 @@
+﻿<div class="Main">
+    <section id="two" class="wrapper style3 fade-up" style="background-color:indianred">
+        <div class="inner">
+            <h2>Subjects</h2>
+
+            <section style="margin-top:70px">
+                <form method="post" action="#">
+                    <div class="fields col-10-small">
+                        <wrapper>
+                            <div class="field half">
+                                <label for="subjectName">Subject Name</label>
+                                <input type="text" ng-model="vm.SubjectName" name="subjectName" id="subjectName" />
+                            </div>
+                            <div class="field half">
+                                <label for="subjectCode">Subject Code</label>
+                                <input type="text" ng-model="vm.SubjectCode" name="subjectCode" id="subjectCode" />
+                            </div>
+
+                        </wrapper>
+                    </div>
+
+                </form>
+
+                <ul class="actions">
+                    <li><a class="button" ng-click="vm.SaveSubject()">SaveSubject</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Subject DataGrid</h2>
+               
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject Name</th>
+                                <th>Subject Code</th>
+                                
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </section>
+
+        </div>
+    </section>
+
+
+</div>

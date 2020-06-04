@@ -1,0 +1,59 @@
+﻿
+
+<div class="Main">
+    <section id="two" class="wrapper style3 fade-up" style="background-color:coral">
+        <div class="inner">
+            <h2 style="color:azure">Students</h2>
+
+            <section style="margin-top:70px">
+                <form method="post" action="#">
+                    <div class="fields col-10-small">
+                        <wrapper>
+                            <div class="field half">
+                                <label for="name">Student Name</label>
+                                <input type="text" ng-model="vm.Name" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="dni">DNI</label>
+                                <input type="text" ng-model="vm.Dni" name="dni" id="dni" width="240" />
+                            </div>
+                            <div class="field half">
+                                <label>Locker Key Number</label>
+                                <input type="text" ng-model="vm.LockerKeyNumber" name="lockerKeyNumber" id="lockerKeyNumber" />
+                            </div>
+                            <div class="field half">
+                                <label for="mail">Mail</label>
+                                <input type="text" ng-model="vm.Mail" name="mail" id="mail" />
+                            </div>
+                        </wrapper>
+
+                    </div>
+
+                </form>
+
+                <ul class="actions">
+                    <li><a class="button" ng-click="vm.SaveStudent()">Save Student</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><a class="button" ng-click="vm.GetStudentsRequest()">Get Student</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><a class="button" ng-click="vm.EditStudent()">Edit Student</a></li>
+                </ul>
+            </section>
+            <section>
+
+                <label ng-model="Students"></label>
+            </section>
+            <section>
+                <h2>Students DataGrid</h2>
+                <div ui-grid="vm.gridOptions" ui-grid-selection></div>
+
+            </section>
+
+
+        </div>
+    </section>
+
+
+</div>
